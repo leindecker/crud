@@ -1,0 +1,9 @@
+<div ng-controller="FuncionarioController">
+	<b> Id: </b> {{funcionario.id}} <br />
+	<b> Nome: </b> {{funcionario.nome}} <br />
+	<b> Setor: </b> {{funcionario.setor}} <br />
+	
+	<a class="btn btn-info btnActionsPerson" href="#/funcionarios"> Voltar </a>
+	<a class="btn btn-primary btnActionsPerson" ng-click="editFuncionario()"> Editar </a>
+	<a class="btn btn-danger btnActionsPerson" ng-click="remove()"> Remover </a>
+</div>

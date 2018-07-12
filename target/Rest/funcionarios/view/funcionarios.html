@@ -1,0 +1,42 @@
+<div ng-controller="FuncionariosController">
+	<h4> Funcionarios </h4>
+	
+	<a class="btn btn-primary btnNewPerson" ng-click="createFuncionarios()"> Adicionar </a>
+	
+	<table class="table table-sm table-dark">
+	
+		<tr>
+			<!-- Id -->
+			<th> 
+				ID
+			</th>
+			
+			<th>
+				NOME
+			</th>
+			
+			<th>
+				SETOR
+			</th>
+				
+			<!-- Actions -->
+			<th></th>
+		</tr>
+		<tr ng-repeat="funcionario in funcionarios">
+			<td>
+				{{funcionario.id}}
+			</td>
+			
+			<td>
+				{{funcionario.nome}}
+			</td>
+			
+			<td>
+				{{funcionario.setor}}
+			</td>
+			<td>
+				<a ng-href = "#/funcionario/{{funcionario.id}}" class="btn btn-default"> Detalhes </a>
+			</td>
+		</tr>
+	</table>
+</div>

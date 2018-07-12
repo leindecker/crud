@@ -1,0 +1,17 @@
+<div ng-controller="FuncionarioController">
+	<form name=frmCliente" ng-submit="update()">
+		 <!-- Controlar erros backend -->
+		 <div class="alert alert-danger" ng-show="errors" role="alert"> Invalida Data! </div>
+		 
+		  <div class="form-group">
+			<label>	Nome: </label>
+			<input type="text" class="form-control" name="name" ng-model="funcionario.nome" required />
+		</div>
+		
+		<div class="form-group">
+			<label> Setor: </label>
+			<input type="text" class="form-control" name="name" ng-model="funcionario.setor"/>
+		</div>		 
+		<input type="submit" class="btn btn-primary btnUpdate"  value="Atualizar" />
+	</form>
+</div>

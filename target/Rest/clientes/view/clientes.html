@@ -1,0 +1,57 @@
+<div ng-controller="ClientesController">
+	<h4> Clientes </h4>
+	
+	<a class="btn btn-primary btnNewPerson" ng-click="createClientes()"> Adicionar </a>
+	
+	<table class="table">
+		<tr>
+			<!-- Id -->
+			<th> 
+				ID
+			</th>
+
+			<th>
+				NOME
+			</th>
+			
+			<th>
+				CPF
+			</th>
+			
+			<th>
+				CNH
+			</th>
+			
+			<th>
+				TELEFONE
+			</th>
+			
+			<!-- Actions -->
+			<th></th>
+		<tr ng-repeat="cliente in clientes">
+			<td>
+				{{cliente.id}}
+			</td>
+			
+			<td>
+				{{cliente.nome}}
+			</td>
+			
+			<td>
+				{{cliente.cpf}}
+			</td>
+			
+			<td>
+				{{cliente.cnh}}
+			</td>
+			
+			<td>
+				{{cliente.telefone}}
+			</td>
+			
+			<td>
+				<a ng-href = "#/clientes/{{cliente.id}}" class="btn btn-default"> Detalhes </a>
+			</td>
+		</tr>
+	</table>
+</div>

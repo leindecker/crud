@@ -1,0 +1,10 @@
+<div ng-controller="AutomovelController">
+	<b> Id: </b> {{automovel.id}} <br />
+	<b> Modelo: </b> {{automovel.modelo}} <br />
+	<b> Cor: </b> {{automovel.cor}} <br />
+	<b> Placa: </b> {{automovel.placa}} <br />
+	
+	<a class="btn btn-info btnActionsPerson" href="#/automoveis"> Voltar </a>
+	<a class="btn btn-primary btnActionsPerson" ng-click="editAutomovel()"> Editar </a>
+	<a class="btn btn-danger btnActionsPerson" ng-click="remove()"> Remover </a>
+</div>

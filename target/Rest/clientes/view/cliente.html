@@ -1,0 +1,11 @@
+<div ng-controller="ClienteController">
+	<b> Id: </b> {{cliente.id}} <br />
+	<b> Nome: </b> {{cliente.nome}} <br />
+	<b> Cpf: </b> {{cliente.cpf}} <br />
+	<b> Cnh: </b> {{cliente.cnh}} <br />
+	<b> Telefone: </b> {{cliente.telefone}} <br />
+	
+	<a class="btn btn-info btnActionsPerson" href="#/clientes"> Voltar </a>
+	<a class="btn btn-primary btnActionsPerson" ng-click="editClientes()"> Editar </a>
+	<a class="btn btn-danger btnActionsPerson" ng-click="remove()"> Remover </a>
+</div>

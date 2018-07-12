@@ -1,0 +1,53 @@
+<div ng-controller="AutomoveisController">
+	<h4> Automoveis </h4>
+	
+	<a class="btn btn-primary btnNewPerson" ng-click="createAutomoveis()"> Adicionar </a>
+	
+	<table class="table">
+		<tr>
+			<!-- Id -->
+			<th> 
+				ID
+			</th>
+			
+			<th>
+				MODELO
+			</th>
+			
+			<th>
+				COR
+			</th>
+			
+			<th>
+				PLACA
+			</th>
+			
+			<!-- Actions -->
+			<th></th>
+		<tr ng-repeat="automovel in automoveis">
+			<td>
+				{{automovel.id}}
+			</td>
+			
+			<td>
+				{{automovel.modelo}}
+			</td>
+			
+			<td>
+				{{automovel.cor}}
+			</td>
+			
+			<td>
+				{{automovel.placa}}
+			</td>
+			
+			<td>
+				{{cliente.telefone}}
+			</td>
+			
+			<td>
+				<a ng-href = "#/automovel/{{automovel.id}}" class="btn btn-default"> Detalhes </a>
+			</td>
+		</tr>
+	</table>
+</div>
